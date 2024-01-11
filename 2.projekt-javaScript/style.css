@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    height: 70px;
+    color:rgb(10, 92, 92);
+}
+
+.logo {
+    flex-grow: 1;
+    padding:5px 0 0 30px;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type:none;
+    margin-right: 20px;
+}
+
+nav li :hover {
+    color: rgb(4, 192, 192);
+}
+
+nav li a {
+    text-decoration: none;
+    color:rgb(10, 92, 92);
+}
+
+.menu-icon {
+    display: none;
+    margin-right: 30px;
+    font-size: 25px;
+}
+@media (max-width: 750px) {
+    .menu-icon {
+        display:block;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .menu-icon :hover{
+        color: rgb(4, 192, 192);
+    }
+    header {
+        position: relative;
+    }
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color:black;
+        width: 100%;
+    }
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+/*main*/
+.images-container {
+    min-height: calc(100vh - 70px);
+    background-image: url(images/neptune2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*container*/
+.container-button {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: black;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 15px;
+    margin:25px;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    }
+
+    .light{
+        color:rgb(10, 92, 92);
+    }
+    .dark{
+        color:black;
+        background-color: rgb(10, 92, 92);
+    }
+    
+    .light {
+        background-color:rgb(101, 217, 217) ;
+    }
+    
+    .light:hover {
+        background-color:rgb(4, 167, 167);
+    }
+    .dark {
+        background-color:rgb(10, 92, 92);
+    
+    }
+    .dark:hover {
+        background-color:rgb(4, 44, 44);
+        
+    }
+    /*about-up*/
+.about-up-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;     
+    gap:30px;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.about-up{
+    width:50%;
+}
+
+.about-up-img img{
+    border-radius:50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 3px 50px rgb(10, 92, 92);
+}
+
+.about-up-title{
+    text-align:center;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 3px 3px 6px rgb(10, 92, 92);
+    
+}
+
+.about-up-text{
+    text-align:center;
+    margin-top: 30px;
+    font-size:20px
+}
+
+/*offer-services*/
+
+.offer {
+    background: linear-gradient(white,rgb(101, 217, 217));
+    padding-top: 20px;
+}
+
+.offer-services-title{
+    text-align:center;
+    font-size: 27px;
+    font-style: italic;
+    text-shadow: 3px 3px 6px rgb(10, 92, 92);
+    margin:30px;
+    padding-top: 50px;
+}
+
+.offer-services {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.offer-services img {
+    border-radius: 10px;
+    box-shadow:5px 5px 6px rgb(10, 92, 92);
+    margin-top: 30px;
+}
+
+.offer-services-diver-text{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+.offer-services-show-text{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+.offer-services-equipment-text{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.magnify {
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+/*Diving-school*/
+.diving-school {
+    background: linear-gradient(rgb(101, 217, 217),white)
+}
+
+.diving-school-title {
+    text-align:center;
+    font-size: 27px;
+    font-style: italic;
+    text-shadow: 3px 3px 6px rgb(10, 92, 92);
+    -webkit-text-stroke: white 0.2px;
+    padding: 40px 30px 40px 30px;
+}
+.diving-school-img img{
+    border-radius: 10px;
+}
+.wrapper-diving-school {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    padding: 5px;
+
+}
+.diving-school-text {
+    width:70% ;
+    text-align: center;
+}
+
+.items {
+    padding: 50px;
+}
+.items a {
+    text-decoration: none;
+    color:rgb(4, 167, 167);
+}
+.items a:hover {
+    color: black;
+}
+/*courses*/
+
+.beginner-course-title {
+    padding: 150px 30px 0 30px;
+}
+
+.beginner-course {
+    padding-top: 10px;
+}
+
+.price-course {
+    background-color:rgb(4, 167, 167) ;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding:13px;
+    margin-top: 20px;
+}
+.price-info {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.more-info {
+    width: 50%;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.more-info-condition {
+    padding: 15px;
+    color:rgb(10, 92, 92);
+}
+.image-dive img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 20px rgb(10, 92, 92);
+}
+
+/*advanced-courses*/
+
+.advanced-course {
+    padding:100px 30px 0px 30px;
+}
+.advanced-courses-text {
+    padding-top: 20px;
+}
+.specialization {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+    top:40px
+}
+.open-water {
+    flex: 1;
+    background: linear-gradient(white,rgb(101, 217, 217),black);
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.rescue {
+    flex: 1;
+    background: linear-gradient(white,rgb(101, 217, 217),black);
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.emergency {
+    flex: 1;
+    background: linear-gradient(white,rgb(101, 217, 217),black);
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.open-water-price {
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.rescue-price {
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.emergency-price {
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+@media (max-width: 710px) {
+    .specialization {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.image-container {
+    width:100%;
+    height: 550px;
+    background-image:url(images/333.jpg);
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*professional-courses*/
+
+.professional-course-title {
+    padding: 30px;
+}
+
+.professional-more-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 50px;
+}
+
+.professional-image img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 3px 15px 20px rgb(10, 92, 92);
+}
+
+.professional-more-info-text {
+    width: 50%;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+/*club-events*/
+
+.club-events-title {
+    text-align:center;
+    font-size: 27px;
+    font-style: italic;
+    text-shadow: 3px 3px 6px rgb(10, 92, 92);
+    -webkit-text-stroke: white 0.2px;
+    padding: 40px 30px 40px 30px;
+}
+
+.club-events {
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.aquacentrum {
+    flex: 1;
+    padding: 20px;
+}
+.Stephens-diving {
+    flex: 1;
+    padding: 20px;
+}
+.new-year-meeting {
+    flex: 1;
+    padding: 20px;
+}
+.club-events img {
+    box-shadow: 6px 6px 10px rgb(10, 92, 92);
+    border-radius: 10px;
+}
+.club-events p {
+    color: rgb(10, 92, 92);
+    padding-bottom: 20px;
+}
+
+/*contact*/
+
+.contact-title {
+    text-align:center;
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 3px 3px 6px rgb(10, 92, 92);
+    padding: 50px 0 50px 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    gap: 10px;
+    background: linear-gradient(white,rgb(101, 217, 217),black);
+}
+.contact p {
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*form*/
+.form {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+.form h2 {
+    color: white;
+}
+
+.form .fullName,.number,.form [type="email"],textarea,.password,.password-check{
+    text-align: center;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    color: white;
+    border: 2px solid rgb(101, 217, 217);
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 400px;
+    outline: none;
+}
+
+.form .fullName:focus,.number:focus,form [type="email"]:focus,textarea:focus ,.password-check:focus, .password:focus {
+    transition: 0.25s;
+    width: 480px;
+    border-color:rgb(10, 92, 92); ;
+}
+
+.form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background:linear-gradient(white,rgb(101, 217, 217),black);
+    text-align: center;
+    border: 2px solid rgb(101, 217, 217);
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.form input[type="submit"]:hover {
+    background:rgb(101, 217, 217) ;
+    
+}
+
+.passwords-match {
+    color:greenyellow;
+    display: none;
+}
+
+.passwords-not-match {
+    color: red;
+    display: none;
+
+}
+/*footer*/
+.conclusion {
+    display: flex;
+    background: black;
+    color: rgb(35, 82, 92);
+    justify-content:space-between;
+    padding: 0 35px 0 35px;
+} 
+
+.conclusion-text {
+    padding-top: 20px;
+}
+/*icone*/
+
+.fa-regular {
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    color:rgb(35, 82, 92) ;
+    display:b
+}
